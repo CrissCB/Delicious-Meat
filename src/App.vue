@@ -6,6 +6,7 @@ import Principal from './views/Principal.vue'
   <div>
     <Principal/>
   </div>
+  
 </template>
 
 <style>
