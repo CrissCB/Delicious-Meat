@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import Principal from './views/Principal.vue'
 </script>
 
 <template>
   <div>
-    <Principal/>
+    <router-view></router-view>
   </div>
-  
 </template>
 
 <style>

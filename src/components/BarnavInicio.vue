@@ -1,14 +1,10 @@
 <script setup lang="ts">
-    import { useRouter } from "vue-router"
-
-    const router = useRouter();
-
 </script>
 
 <template>
     <nav class="navbar fixed-top navbar-dark bg-dark">
        
-        <div>
+        <div class="">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
                     data-bs-target="#MenuBarra" 
                     aria-controls="MenuBarra" 
@@ -31,14 +27,14 @@
                 <div class="offcanvas-body mt-4">
                     <ul class="list-group list-group-flush fs-5" >
                       <li class="list-group-item p3 text-" style="background-color: #212529;">
-                        <a class="nav-link active text-light" href="">
+                        <router-link to="/" class="nav-link text-light">
                             Home
-                        </a>
+                        </router-link>
                       </li>
                       <li id="Micuenta" class="list-group-item p3 text-" style="background-color: #212529;">
-                        <a class="nav-link text-light" href="">
+                        <router-link to="Login" class="nav-link text-light">
                             Mi cuenta
-                        </a>
+                        </router-link>
                       </li>
                       <li class="list-group-item p3 text-" style="background-color: #212529;">
                         <a class="nav-link text-light" href="">
@@ -71,7 +67,9 @@
             </div>
             <!--End OfCanva-->
 
-            <a class="navbar-brand h1 fw-semibold fs-3" href="#">DELICIOUS MEAT</a>
+        <router-link to="/" class="navbar-brand h1 fw-semibold fs-3">
+            DELICIOUS MEAT
+        </router-link>
         </div>
         <div>
             <button type="button" class="btn btn-dark">

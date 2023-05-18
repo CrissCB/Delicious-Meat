@@ -4,7 +4,7 @@
 
 <template>
     <BarnavIncio/>
-    <div class="container-fluid position-fixed translate-middle">
+    <div class="container-fluid position-fixed  start-50 top-50 translate-middle ">
         <div class="row">
             <div class="col sm-12 px-1">
                 <div class="card bg-dark text-white">

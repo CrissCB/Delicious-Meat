@@ -18,14 +18,14 @@
                 <div class="offcanvas-body mt-4">
                     <ul class="list-group list-group-flush fs-5">
                         <li class="list-group-item p3 text-" style="background-color: #212529;">
-                            <a class="nav-link active text-light" href="">
+                            <router-link :to="{name: 'Principal'}" class="nav-link text-light">
                                 Home
-                            </a>
+                            </router-link>
                         </li>
                         <li class="list-group-item p3 text-" style="background-color: #212529;">
-                            <a class="nav-link text-light" href="">
-                                Mi Cuenta
-                            </a>
+                            <router-link :to="{name: 'Login'}" class="nav-link text-light">
+                                Mi cuenta
+                            </router-link>
                         </li>
                         <li class="list-group-item p3 text-" style="background-color: #212529;">
                             <a class="nav-link text-light" href="">
@@ -59,7 +59,9 @@
             <!--End OfCanva-->
 
         </div>
-        <a class="navbar-brand h1 fw-semibold fs-3" href="#">DELICIOUS MEAT</a>
+        <router-link :to="{name: 'Principal'}" class="navbar-brand h1 fw-semibold fs-3">
+            DELICIOUS MEAT
+        </router-link>
         <div>
             <button type="button" class="btn btn-dark">
                 <svg id="i-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"
